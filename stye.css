@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.app{
+    border: white, 1px, solid;
+    display: grid;
+    justify-content: center;
+    margin-top: 80px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.btn{
+
+}
+.btn-sum{
+
+}
+.btn-rest{
+
+}
