@@ -1,0 +1,128 @@
+//se hizo un contador con colores en neón, los botones sirven para sumar y restar desde 0.
+//el titulo, el nombre y los botones tienen formato neón.
+//todo el estilo es puramente hecho con css.
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: #0c192c;
+    .app{
+    border: white, 1px, solid;
+    display: grid;
+    justify-content: center;
+    margin-top: 80px;
+    }
+    h1{
+        color: white;
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+        font-size: 3em;
+        margin: 20px 0;
+        transition: all 0.5s;
+        color: #FF1177;
+        &:hover{
+            animation: 1s ease-out infinite alternate;
+            color: #ffffff;
+            text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #FF1177,
+                 0 0 70px  #FF1177,
+                 0 0 80px  #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+        }  
+    }
+    p{
+        color: white;
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+        font-size: 1em;
+        margin: 20px 0;
+        transition: all 0.5s;
+        color: #FF1177;
+        &:hover{
+            animation: 1s ease-out infinite alternate;
+            color: #ffffff;
+            text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #FF1177,
+                 0 0 70px  #FF1177,
+                 0 0 80px  #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+        }  
+    }
+    .container{
+        .btn-sumar{
+            background-color:#ff2d75;
+            font-size: 1.2rem;
+            width: 50px;
+            &:hover{
+                transition: 1s ease-out;
+                box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+            }
+        }
+        .btn-rest{
+            background: #4fc3dc;
+            font-size: 1.2rem;
+            width: 50px;
+            &:hover{
+                transition: 1s ease-out;
+                box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+            }
+        }
+    }
+    .fondo{
+        width: 100%;
+        height: 100vh;
+        .bubbles{
+            position: relative;
+            display: flex;
+            span{
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: #4fc3dc;
+                margin: 0 4px;
+                box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+                animation: animate 15s linear infinite;
+                animation-duration: calc(125s / var(--i));
+            }
+            span:nth-child(even){
+                background: #ff2d75;
+                box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+            }
+        }
+        @keyframes animate{
+            0%{
+                transform: translatey(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+    }
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

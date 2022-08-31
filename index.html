@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stye.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <title>Contador-VueJS</title>
     <script src="http://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body>
-    <div id="app" class="app">
+    <div>
         <h1>Contador con VueJS</h1>
-        <div class="container">
-            <button id="sum" class="btn btn-sum" @click="sumar()">+</button>
-            <input type="numb" name="num" id="num" v-model="num" readonly>
-            <button id="rest" class="btn btn-rest" @click="restar()">-</button>
+        <p>Alumna: Angela Suarez</p>
+    </div>
+    <div class="fondo">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
         </div>
-        
+    </div>
+    <div class="container" id="app">
+        <button id="sum" class="btn btn-sumar" @click="sumar()">+</button>
+        <input type="numb" name="num" id="num" v-model="num" readonly>
+        <button id="rest" class="btn btn-rest" @click="restar()">-</button>
     </div>
     
 </body>
