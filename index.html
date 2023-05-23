@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <title>Contador-VueJS</title>
-    <script src="http://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body>
     <div>
@@ -55,11 +54,12 @@
         </div>
     </div>
     <div class="container" id="app">
-        <button id="sum" class="btn btn-sumar" @click="sumar()">+</button>
+        <button id="sum" class="btn btn-sumar" @click="sum()">+</button>
         <input type="numb" name="num" id="num" v-model="num" readonly>
-        <button id="rest" class="btn btn-rest" @click="restar()">-</button>
+        <button id="rest" class="btn btn-rest" @click="rest()">-</button>
     </div>
     
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
